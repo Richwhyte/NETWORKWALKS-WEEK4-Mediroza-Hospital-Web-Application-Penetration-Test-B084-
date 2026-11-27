@@ -138,7 +138,11 @@ Following that single breadcrumb straight to `/old/`, directory listing was enab
 
 ---
 ## All Evidence of images and the technical work done is shown below
-## [Mediroza hospital Homepage](homepage.png)
+## ![Mediroza hospital Homepage](homepage.png)
+## ![patient](patient.png)
+
+
+# This URL shows all the full Technical steps and Evidence 
 https://github.com/Richwhyte/NETWORKWALKS-WEEK4-Mediroza-Hospital-Web-Application-Penetration-Test-B084-/commit/f1a3b8f8c1a82831110219f4a5541894cf941edb#diff-6aec01df240edb87cda16b7ab721766d3fce0c56f46240c27281848af8e1682b
 
 ###  Full Report
