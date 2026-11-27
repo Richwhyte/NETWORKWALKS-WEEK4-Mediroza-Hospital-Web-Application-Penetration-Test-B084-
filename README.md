@@ -139,7 +139,15 @@ Following that single breadcrumb straight to `/old/`, directory listing was enab
 ---
 ## All Evidence of images and the technical work done is shown below
 ## ![Mediroza hospital Homepage](homepage.png)
+## ![Mediroza hospital Homepage](19_p14_PDF3-pathology-report-Thompson.png)
+## ![patient](robots.png)
+## ![patient](attempt1.png)
+## ![patient](attempt2.png)
 ## ![patient](patient.png)
+## ![patient](staff.png)
+## ![patient](old.png)
+## ![patient](shareholder doc form.png)
+## ![patient](staff doc form.png)
 
 
 # This URL shows all the full Technical steps and Evidence 
