@@ -1,4 +1,4 @@
-👨🏾‍💻 Mediroza Hospital — Web Application Penetration Test
+ Mediroza Hospital — Web Application Penetration Test
 =======================================================
 
 ### A full black-box penetration test of a hospital patient portal, from `robots.txt` to a leaked payroll database.
@@ -16,7 +16,7 @@
 
 ---
 
-### 📝 Project Overview
+###  Project Overview
 
 This project is a **black-box web application penetration test** carried out against `medirozahospital.com`, a simulated hospital patient portal, as my **Week 4 Capstone Project** for the **NetworkWalks Cybersecurity Internship (Batch B084)**.
 
@@ -24,21 +24,21 @@ The goal was to start with nothing but a URL and legitimate written authorizatio
 
 By the end of the engagement I had chained **10 separate findings** — from a leaky `robots.txt` file all the way through SQL injection, weak PDF encryption, and careless metadata — into full, unauthenticated access to:
 
-- 📋 Three confidential patient pathology lab reports
-- 💰 The monthly salaries and national ID numbers of all 30 hospital staff
-- 📈 The full shareholding structure of the hospital's 10 shareholders
+-  Three confidential patient pathology lab reports
+-  The monthly salaries and national ID numbers of all 30 hospital staff
+- The full shareholding structure of the hospital's 10 shareholders
 
 All testing was performed in an isolated virtual lab against a target explicitly set up for this exercise, with written authorization from the client. **No real patient, staff, or financial data was involved.**
 
 ---
 
-### 🎯 Objective
+###  Objective
 
 > Identify vulnerabilities in the Mediroza patient portal, demonstrate their real-world impact through controlled exploitation, and deliver a professional report with practical remediation guidance.
 
 ---
 
-### 🧭 Scope
+###  Scope
 
 | | |
 |---|---|
@@ -49,7 +49,7 @@ All testing was performed in an isolated virtual lab against a target explicitly
 
 ---
 
-### 🛠️ Tools Used
+### Tools Used
 
 ![Browser DevTools](https://img.shields.io/badge/-Browser%20DevTools-333333)
 ![Hash Calculator](https://img.shields.io/badge/-PDF%20Hash%20Calculator-333333)
@@ -66,41 +66,7 @@ All testing was performed in an isolated virtual lab against a target explicitly
 
 ---
 
-### 🔗 The Attack Chain
-
-Each finding below unlocked the next. Nothing was reachable without the step before it.
-
-```
-robots.txt disclosure
-        │
-        ▼
-Username enumeration  ───────►  confirms "admin" account exists
-        │
-        ▼
-SQL injection (login.php)  ──►  admin' --  bypasses authentication entirely
-        │
-        ▼
-Directory listing on /patient/ and /staff/  ──►  internal files exposed
-        │
-        ▼
-3x encrypted patient PDF reports downloaded
-        │
-        ▼
-Weak PDF passwords cracked with a wordlist
-        │
-        ▼
-Hidden metadata in report 3  ──►  comment reveals "/old" backup location
-        │
-        ▼
-/old/ directory listing  ──►  mediroza_db_backup_2019.sql exposed
-        │
-        ▼
-Full staff payroll + shareholder data recovered in plain text
-```
-
----
-
-### 🔎 Findings Summary
+###  Findings Summary
 
 | # | Vulnerability | Location | Risk |
 |---|---|---|---|
@@ -117,7 +83,7 @@ Full staff payroll + shareholder data recovered in plain text
 
 ---
 
-### 💉 Spotlight: The SQL Injection
+### Spotlight: The SQL Injection
 
 The login form's username field was concatenated directly into a SQL query with no sanitization. Submitting a single quote broke the query and leaked a raw MySQL error:
 
@@ -148,7 +114,7 @@ Result: **full authentication bypass**, logged in as `admin`, zero valid credent
 
 ---
 
-### 🗄️ Spotlight: The Exposed Database Backup
+###  Spotlight: The Exposed Database Backup
 
 A hidden `Comments` field inside one of the cracked PDFs — left behind by an IT administrator — read:
 
@@ -159,7 +125,7 @@ Following that single breadcrumb straight to `/old/`, directory listing was enab
 
 ---
 
-### ✅ Key Recommendations
+###  Key Recommendations
 
 | Fix | Why it matters |
 |---|---|
@@ -172,7 +138,7 @@ Following that single breadcrumb straight to `/old/`, directory listing was enab
 
 ---
 
-### 📄 Full Report
+###  Full Report
 
 The complete penetration testing report — with every finding, full evidence screenshots, the full attack chain, and detailed remediation guidance — is included in this repository:
 
@@ -180,7 +146,7 @@ The complete penetration testing report — with every finding, full evidence sc
 
 ---
 
-### ⚠️ Disclaimer
+###  Disclaimer
 
 This project was carried out as a **controlled educational exercise** under the NetworkWalks Cybersecurity Internship Program against a **simulated training environment**, with written authorization from the client. These techniques must never be applied to any system without explicit written permission from its owner.
 
