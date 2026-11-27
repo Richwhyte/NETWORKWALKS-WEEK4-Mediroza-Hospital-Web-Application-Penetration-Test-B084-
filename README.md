@@ -146,8 +146,8 @@ Following that single breadcrumb straight to `/old/`, directory listing was enab
 ## ![patient](patient.png)
 ## ![patient](staff.png)
 ## ![patient](old.png)
-## ![patient](shareholder doc form.png)
-## ![patient](staff doc form.png)
+## ![patient](shareholder_doc_form.png)
+## ![patient](staff_doc_form.png)
 
 
 # This URL shows all the full Technical steps and Evidence 
