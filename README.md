@@ -157,7 +157,9 @@ https://github.com/Richwhyte/NETWORKWALKS-WEEK4-Mediroza-Hospital-Web-Applicatio
 
 The complete penetration testing report — with every finding, full evidence screenshots, the full attack chain, and detailed remediation guidance — is included in this repository:
 
-📎 **[`Okon_Inemesit_Udo_Penetration_Testing_Report.pdf`](Okon_Inemesit_Udo_Penetration_Testing_Report.pdf)**
+📎 ### 📄 Full Penetration Testing Report
+ **[View / Download Full PDF Report](Okon_Inemesit_Udo_Penetration_Testing_Report.pdf)**
+
 
 ---
 
